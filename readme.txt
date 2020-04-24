@@ -10,7 +10,8 @@ Open phpmyadmin
 Create Database named online_store.
 Import database online_store.sql from downloaded folder(inside database)
 4. Open Your browser put inside "http://localhost/online_store/"
-5.For Managing store go to "http://localhost/online_store/adminpanel.html"
+5.For Managing store go to "http://localhost/online_store/admin.html"
+
 ----------------------------------------------------------------------------------------------------
 
 Admin Login Details
