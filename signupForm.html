@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        h2{
+            text-align:center;
+            background:blue;
+            color:white;
+            padding:10px;
+            font-size:30px;
+        }
+        h3{
+            text-align:center;
+            color:blue;
+            font-size:25px;
+            padding:10px;
+        }
+        form{
+            text-align:center;
+        }
+        input[type=password],input[type=email],input[type=text], input[type=number]{
+            width:70%;
+            margin:10px;
+            padding:10px;
+            border:2px solid blue;
+            font-size:17px;
+            }        
+            input[type=submit]{
+                background: green;
+                color:white;
+                padding:6px 20px;
+                font-size: 15px;
+            }
+            
+            input[type=file]{
+                margin:10px;
+                padding:6px 20px;
+                font-size: 17px;
+            }
+            ::placeholder{
+                color:indigo
+            }
+    </style>
+    
+</head>
+<body>
+   <h2>DigiShop</h2>
+   <h3>Registeration Form </h3>
+
+    <form action="signupForm.php" method="POST">
+               <input type="text" class="t" placeholder="Enter Your Name" name="user_name" required/>
+                <input type="email" class="t" placeholder="Enter Your Email " name="email" required/>
+                <input type="password" class="t" placeholder="Select Your Password " name="password" required/>
+                <input type="number" class="t" placeholder="Enter Your Mobile No." name="mobile_no" required/>
+                <input type="text" class="t" placeholder="Enter Your Address" name="address" required/>
+         
+              <br/>
+                <input class="sub" type="submit" value="Register"/>     
+    </form>
+
+    
+</body>
+</html>

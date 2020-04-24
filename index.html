@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" type="text/CSS" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <p>ONLINE STORE</p>
+        <a href="login.html"><button id="signin">SignIn</button></a>
+        <a href="myorders.php"><button id="signin">MyOrders</button></a>
+    </header>
+
+
+    <div class="content">
+       
+        <div>
+            <form action="products.php" method="GET">
+                <h3> Foods</h3>
+                <input type="hidden" value=1 name="page" />
+                <div class="category">
+                    <button>
+                        <div class="product">
+                            <img class="product_image" src="photos/oil.jpg" />
+                            <p class="product_name"> Fortune Oil</p>
+                            <p class="product_price">120 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/ghee.jpg" />
+                            <p class="product_name"> Ghee</p>
+                            <p class="product_price">500 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/atta.jpg" />
+                            <p class="product_name">Atta</p>
+                            <p class="product_price">250 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/pazzta.jpg" />
+                            <p class="product_name"> Pazzta</p>
+                            <p class="product_price">50 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/cofee.jpg" />
+                            <p class="product_name">Cofee</p>
+                            <p class="product_price">50 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/honey.jpg" />
+                            <p class="product_name">Honey</p>
+                            <p class="product_price">250 Rs</p>
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+
+            <form action="products.php?page=2" method="GET">
+                <input type="hidden" value=2 name="page" />
+                <h3> Electronic Accessories</h3>
+                <div class="category">
+                    <button>
+                        <div class="product">
+                            <img class="product_image" src="photos/OPPO A9.jpg" />
+                            <p class="product_name"> OPPO A9</p>
+                            <p class="product_price">6999 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/Redmi 5.jpg" />
+                            <p class="product_name"> Redmi 5</p>
+                            <p class="product_price">5000 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/RedmiNote8.jpg" />
+                            <p class="product_name">Redmi Note 8</p>
+                            <p class="product_price">7000 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/VivoV9.jpg" />
+                            <p class="product_name"> VivoV9</p>
+                            <p class="product_price">5000 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/VivoV20.jpg" />
+                            <p class="product_name">Vivo V20</p>
+                            <p class="product_price">12000 Rs</p>
+                        </div>
+                        <div class="product">
+                            <img class="product_image" src="photos/VivoV9.jpg" />
+                            <p class="product_name">VivoV9</p>
+                            <p class="product_price">5000 Rs</p>
+                        </div>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer" style="text-align: center;">
+       <a href="logout.php"><buttob>Logout</buttob></a>
+    </div>
+
+    <script src="jsfile.js"></script>
+</body>
+
+</html>

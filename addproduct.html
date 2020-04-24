@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        h2{
+            text-align:center;
+            background:blue;
+            color:white;
+            padding:10px;
+            font-size:30px;
+        }
+        h3{
+            text-align:center;
+            color:blue;
+            font-size:25px;
+            padding:10px;
+        }
+        form{
+            text-align:center;
+        }
+        input[type=text], input[type=number]{
+            width:70%;
+            margin:10px;
+            padding:10px;
+            border:2px solid blue;
+            font-size:17px;
+            }        
+            input[type=submit]{
+                background: green;
+                color:white;
+                padding:6px 20px;
+                font-size: 15px;
+            }
+            
+            input[type=file]{
+                margin:10px;
+                padding:6px 20px;
+                font-size: 17px;
+            }
+            ::placeholder{
+                color:indigo
+            }
+    </style>
+</head>
+<body>
+    <h2>DigiShop</h2>
+    <h3>ADD Product</h3>
+    <form method="POST" action="addproduct.php" enctype="multipart/form-data" required>
+        <input type="text" placeholder="Enter product name" name="product_name" required/><br/>
+        <input type="number" placeholder="Enter product price" name="product_price" required/><br/>
+        <input type="number" placeholder=" Enter product stock" name="product_stock" required/><br/>
+        <input type="text" placeholder=" Enter product description" name="product_description" required/><br/>
+        <input type="text" placeholder=" Enter category of product eg:electronics,food." name="category" required/><br/>
+        <input type="file" name="file1" required/><br/>
+        <input type="submit" value="Add Product"/>
+
+   </form>    
+    
+</body>
+</html>

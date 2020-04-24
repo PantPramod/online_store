@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+    display: flex;
+    padding:10px;
+    background: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    width:100%;
+    text-align: center;
+    
+    color: white;
+    font-size: 30px;
+    
+}
+
+        form{
+            text-align: center;
+        }
+        .txt{
+            padding:6px;
+            width:70%;
+            margin-top: 50px;
+            border: 1px solid blue;
+        }
+        ::placeholder{
+            color: blue;
+        }
+     
+
+h2{
+    text-align: center;
+    color: blue;
+}
+.sub{
+    background: blue;
+    color: white;
+    padding: 6px 20px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+body{
+    background: rgba(211, 198, 175, 0.466);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <p>ONLINE STORE</p>
+     
+    </header>
+    <h2>Admin Login</h2>
+    <form action="admin.php" method="POST">
+        <input type="email" class="txt" placeholder="Enter Your Email Id" name="admin_email"/><br/>
+        <input type="password" class="txt" placeholder="Enter Your Password" name="admin_password"/><br/>
+        <input class="sub" type="submit" />
+    </form>
+    
+</body>
+</html>
